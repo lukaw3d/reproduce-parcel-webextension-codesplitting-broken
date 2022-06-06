@@ -2,5 +2,13 @@
   "name": "try-repro",
   "manifest_version": 2,
   "version": "0.0.1",
-  "permissions": []
+  "permissions": [],
+  "browser_action": {
+    "default_title": "Popup",
+    "default_popup": "./popup.html"
+  },
+  "background": {
+    "scripts": ["./background.ts"],
+    "persistent": true
+  }
 }
